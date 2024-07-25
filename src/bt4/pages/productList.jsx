@@ -6,8 +6,8 @@ function ProductList() {
   const [list, setList] = useState([]);
 
   useEffect(() => {
-    axios.get('http://localhost:3002/productList') 
-      .then(res => setList(res.data.productList))
+    axios.get('http://localhost:3002/api/productList') //nó bị sai gì không chạy được
+      .then(res => setList(res.data))
   }, []);
   
 
